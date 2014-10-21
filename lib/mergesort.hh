@@ -24,7 +24,7 @@ void mergesort_impl(C *a, size_t nmya, size_t afirst, size_t astep, F &pcmp, C &
     typedef typename C::iterator iterator_type;
     xarray<iterator_type> ai;
     for (size_t i = 0; i < nmya; i++) {
-        if ( a[afirst + i * astep].size() == 0)
+        if (a[afirst + i * astep].size() == 0)
             continue;
         iterator_type cur_it = a[afirst + i * astep].begin();
         ai.push_back(cur_it);
